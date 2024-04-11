@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DreamHouse Realty</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-color: #e6f1fc;
+                color: #333;
+            }
+            header {
+                height: 400px;
+                background-image: url('https://i.pinimg.com/originals/8d/c0/0b/8dc00b8c451477fc70a245023ec9e29b.jpg');
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+                color: #e6f1fc; 
+                padding-top: 50px;
+                font-family: "Arial Black", Arial, sans-serif; 
+            }
+            
+            .header-content {
+                max-width: 800px;
+                margin: 0 auto;
+                padding-top: 20px;
+                text-align: center;
+            }
+            
+            .header-content img {
+                width: 200px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                border: 5px solid #e6f1fc;
+            }
+            
+            
+            .navbar {
+                background-color: #559ae0;
+                padding: 10px 0;
+                text-align: center;
+            }
+    
+            .navbar a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin: 0 10px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+    
+            .navbar a:hover {
+                background-color: #555;
+            }
+    
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #bcd0e7;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+            }
+        
+        .feedback {
+            margin-top: 20px;
+        }
+
+        .feedback p {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #161010;
+        }
+
+
+        .feedback {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .feedback .property {
+            width: calc(50% - 10px);
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .feedback .property img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .feedback .property h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .feedback .property p {
+            margin: 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #e6f1fc;
+            color: #151313;
+            padding: 1px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+            <a href="property1.html">Property 1</a>
+            <a href="property2.html">Property 2</a>
+            <a href="property3.html">Property 3</a>
+            <a href="properties.html">Properties</a>
+            <a href="Contact.html">Contact Us</a>
+            <a href="Map.html">Site Map</a>
+        </nav>
+    
+    <header>
+        <h1>Welcome to DreamHouse Realty</h1>
+    </header>
+<main>
+   
+    <section class="container">
+        <div class="header-content">
+            <img src="C:\Users\hudaa\Downloads\image_123650291 (1).JPG" alt="Huda Alkoud">
+            <h1>Welcome to DreamHouse Realty</h1>
+            <p>Providing exceptional real estate services tailored to your needs.</p>
+            <p>Meet Huda Alkoud</p>
+            <p>Huda Alkoud is a seasoned real estate professional with over a decade of experience in helping clients find their dream homes. With a passion for customer satisfaction and a commitment to excellence, Huda goes above and beyond to ensure her clients' needs are met.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Feedback from former customers</h2>
+        <div class="feedback">
+            <p>Here's what some of our satisfied customers have to say:</p>
+            <blockquote>
+                <p>"Working with Huda was an absolute pleasure. She listened to our needs and found us the perfect home."</p>
+                <cite>- Moe and Jane Doe</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Huda went above and beyond to ensure we found the right property. Her expertise and professionalism made the entire process smooth and stress-free."</p>
+                <cite>- Nour Smith</cite>
+            </blockquote>
+    </section>
+
+    <section class="container">
+        <h2>Explore</h2>
+        <div class="contact-form">
+            <h3>Make your next move</h3>
+            <form>
+                <label for="fullname">Full name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comments">Questions or comments</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <input type="submit" value="Match with an agent">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p> DreamHouse Realty - Centennial college, Toronto, ON, Canada, M1G 3T8</p>
+    </footer>
+</main>
+</body>
+</html>

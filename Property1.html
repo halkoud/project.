@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property 1 Details</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            background-image: url('https://static.ojohosts.ca/p/1007/C8214766_0_aZeF3r_r.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .property-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .property-images img {
+            width: 350px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .property-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .property-details {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .not-good-time {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .schedule-viewing {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .schedule-viewing h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .schedule-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .schedule-options label {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .schedule-options select {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .schedule-options button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .schedule-options button:hover {
+            background-color: #0056b3;
+        }
+
+        .schedule-notes {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 3px 0;
+            background-color:White;
+            color: rgb(37, 166, 216);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Property 1 Details</h1>
+        <div class="property-images">
+            <img src="https://static.ojohosts.ca/p/1007/C8214766_0_632eiZ_r.jpeg" alt="Property 1 Image">
+            <img src="https://static.ojohosts.ca/p/1007/C8214766_0_QNFzee_l.jpeg" alt="Property 1 Image">
+        </div>
+        <div class="property-details">
+            <p class="price">$9,500,000</p>
+            <p><strong>6 beds</strong></p>
+            <p><strong>6 baths</strong></p>
+            <p><strong>210 Douglas Drive, Toronto</strong></p>
+            <p class="description">This luxurious property offers spacious living areas, stunning views, and top-of-the-line amenities. Located in the heart of Toronto, it provides convenient access to shops, restaurants, and entertainment venues. Don't miss out on this opportunity to own your dream home!</p>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Agent</h2>
+            <form action="#" method="post">
+                <input type="text" name="full_name" placeholder="Full Name" required><br>
+                <input type="tel" name="phone" placeholder="Phone" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <label>
+                    <input type="checkbox" name="marketing_consent" value="1"> I would like to receive marketing and promotional messages by telephone, text message, and email from Houseful, including information and updates about properties of interest and the services and features of Houseful and our selected partners. I may withdraw my consent at any time. Message and data rates may apply. Consent is not required to receive real estate services.
+                </label><br>
+                <input type="submit" value="Contact Agent">
+            </form>
+            <p class="not-good-time">Not a good time? <a href="#">Contact us later</a></p>
+        </div>
+        <div class="schedule-viewing">
+            <h2>Schedule a viewing</h2>
+            <div class="schedule-options">
+                <div>
+                    <label for="viewing-type">Viewing Type:</label>
+                    <select name="viewing-type" id="viewing-type">
+                        <option value="in-person">In person</option>
+                        <option value="video-tour">Video tour</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="viewing-date">Select Date:</label>
+                    <select name="viewing-date" id="viewing-date">
+                        <option value="tue-09-apr">TUE 09 APR</option>
+                        <option value="wed-10-apr">WED 10 APR</option>
+                        <option value="thu-11-apr">THU 11 APR</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="viewing-time">Select Time:</label>
+                    <select name="viewing-time" id="viewing-time">
+                        <option value="morning">Morning (8am-12pm)</option>
+                        <option value="afternoon">Afternoon (12pm-4pm)</option>
+                        <option value="evening">Evening (4pm-8pm)</option>
+                    </select>
+                </div>
+                <button>Schedule tour</button>
+            </div>
+            <p class="schedule-notes">No obligation or purchase necessary, cancel at any time</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <footer><a href="final_project.html">Back to Home Page</a></footer>
+</body>
+</html>

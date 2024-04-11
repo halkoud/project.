@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Properties for Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url('https://wallpapercave.com/wp/wp2464247.jpg');
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .property {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .property img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .property h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .property p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .property a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .contact-form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 2px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .not-good-time {
+            margin-top: 10px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 3px 0;
+            background-color:White;
+            color: rgb(37, 166, 216);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="property">
+            <img src="https://static.ojohosts.ca/p/1007/C8214766_0_632eiZ_r.jpeg" alt="Property 1 Image">
+            <h2>$9,500,000</h2>
+            <p><strong>6 beds</strong></p>
+            <p><strong>6 baths</strong></p>
+            <p>210 Douglas Drive, Toronto</p>
+            <a href="property1.html">View Details</a>
+        </div>
+        
+        <div class="property">
+            <img src="https://static.ojohosts.ca/p/1007/W8214720_0_Ari2Bu_l.jpeg" alt="Property 2 Image">
+            <h2>$599,900</h2>
+            <p><strong>2 beds</strong></p>
+            <p><strong>2 baths</strong></p>
+            <p>61 Markbrook Lane #804, Toronto, ON M9V 5E7</p>
+            <a href="property2.html">View Details</a>
+        </div>
+        
+        <div class="property">
+            <img src="https://static.ojohosts.ca/p/1007/C8214844_0_Byrryb_l.jpeg" alt="Property 3 Image">
+            <h2>$100,000,000</h2>
+            <p><strong>2 beds</strong></p>
+            <p><strong>2 baths</strong></p>
+            <p>15 Mercer Street #620, Toronto, ON M5V 1H2</p>
+            <a href="property3.html">View Details</a>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Agent</h2>
+            <form action="#" method="post">
+                <input type="text" name="full_name" placeholder="Full Name" required><br>
+                <input type="tel" name="phone" placeholder="Phone" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <label>
+                    <input type="checkbox" name="marketing_consent" value="1"> I would like to receive marketing and promotional messages by telephone, text message, and email from Houseful, including information and updates about properties of interest and the services and features of Houseful and our selected partners. I may withdraw my consent at any time. Message and data rates may apply. Consent is not required to receive real estate services.
+                </label><br>
+                <input type="submit" value="Contact Agent">
+            </form>
+            <p class="not-good-time">Not a good time? <a href="#">Contact us later</a></p>
+        </div>
+    </div>
+    <footer><a href="final_project.html">Back to Home Page</a></footer>
+</body>
+</html>
